@@ -1,0 +1,88 @@
+object Form1: TForm1
+  Left = 856
+  Height = 481
+  Top = 288
+  Width = 683
+  BorderStyle = bsSingle
+  Caption = 'Switch MAC to Port By - Von Wallace - Ver 1.10'
+  ClientHeight = 481
+  ClientWidth = 683
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object Label1: TLabel
+    Left = 9
+    Height = 20
+    Top = 72
+    Width = 43
+    Caption = 'Switch'
+    ParentColor = False
+  end
+  object ciscoswitch: TEdit
+    Left = 192
+    Height = 28
+    Top = 64
+    Width = 120
+    TabOrder = 0
+    Text = '192.168.75.50'
+  end
+  object Button1: TButton
+    Left = 368
+    Height = 25
+    Top = 64
+    Width = 99
+    Caption = 'Probe Switch'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 9
+    Height = 20
+    Top = 19
+    Width = 164
+    Caption = 'SNMP Community Name'
+    ParentColor = False
+  end
+  object scn: TEdit
+    Left = 192
+    Height = 28
+    Top = 19
+    Width = 120
+    TabOrder = 2
+    Text = 'public'
+  end
+  object lmessage: TEdit
+    Left = 8
+    Height = 28
+    Top = 120
+    Width = 664
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object Walkmemo: TMemo
+    Left = 8
+    Height = 306
+    Top = 168
+    Width = 664
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 568
+    Height = 25
+    Top = 19
+    Width = 83
+    Caption = 'Ping'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+  object Button3: TButton
+    Left = 568
+    Height = 25
+    Top = 64
+    Width = 83
+    Caption = 'Traceroute'
+    OnClick = Button3Click
+    TabOrder = 6
+  end
+end
